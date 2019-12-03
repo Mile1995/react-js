@@ -1,0 +1,39 @@
+
+1/ Prerequisite:
+    -	Basic JS
+    -	Css
+    -	Html
+
+
+2/ SPA (Single Page App)
+
+E.g:
+https://reactjs.org/community/examples.html
+https://jira.code.one/login.jsp
+
+3/ JSX
+
+E.g:
+Tools Transform JSX -> JS
+https://babeljs.io/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=MYewdgzgLgBFCWUA2BTA-gKQMoA0YF4YAeAE3gDcZgkBDCCAORoFsUCYByBZdYejgHxEA9GXICgA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.5.5&externalPlugins=
+
+<script>
+
+// JavaScript
+
+const title = React.createElement{
+    'div',
+    {
+        className: 'title_css'
+    },
+    'React demo'
+};
+
+// JSX
+const title_JSX = <div className = 'title_css'></div>  // -> Transform jsx -> JavaScript (Babel)
+
+
+</script>
+
+
+

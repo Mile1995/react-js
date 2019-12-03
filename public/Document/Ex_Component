@@ -1,0 +1,97 @@
+
+#2 Component - How to create the component in React Js
+
+[Ideas for Practice]
+
+
+In this lesson, we will learn how to combine components to make the app easier to maintain. This approach allows to update and change your components without affecting the rest of the page.
+
+Lesson #Ex2 is expected to create 2 Components: Header and Content. They will render to the interface below.
+{Image}
+
+[Code JSX for UI]
+Header
+{code}
+            <div>
+               <nav className="navbar navbar-inverse">
+                 <a className="navbar-brand">#Ex2 Menu Component</a>
+                 <ul className="nav navbar-nav">
+                     <li className="active">
+                         <a>Home</a>
+                     </li>
+                     <li className="active">
+                         <a>Products</a>
+                     </li>
+                     <li className="active">
+                         <a>Help</a>
+                     </li>
+                     <li className="active">
+                         <a>Contact Us</a>
+                     </li>
+                 </ul>
+             </nav>   
+            </div>
+{code}
+
+Content
+{code}
+        var product = {
+        id : 1,
+        name : 'Book 1',
+        price : 120000,
+        unit : 'VND'
+        };
+
+        return(
+        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div className="thumbnail">
+                <img alt="Product1" src ="https://rodbooks.com/images/Product/Album/Nguoi-Giau-Co-Nhat-Thanh-Babylon-2740.jpg"/>
+                <div className="caption">
+                    <h3>Product</h3>
+                    <p>
+                        Price : {product.price} {product.unit}
+                    </p>
+                    <p>
+                        <a className="btn btn-primary">Buy</a>
+                        <a className="btn btn-default">Cart</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        );
+{code}
+
+[Practical Guide]
+We can use Bootstrap and Jquery to generate Html for UI instead of writing code manually.
+
+Step 1:
+* Install library: 
+    - Bootstrap 3.7 (Stable version) (https://getbootstrap.com/docs/3.3/getting-started/#download).
+Copy all the folder of Bootstrap into the path Public/... in React project.
+
+    - Jquery (https://jquery.com/)
+Copy file of Jquery into the path Public/js/... in React project.
+
+* Add a library of Bootstrap and Jquery into 'index.html'
+
+<head>
+...
+<link href="%PUBLIC_URL%/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+...
+<script src="%PUBLIC_URL%/js/jquery-3.4.1.min.js"></script>
+<script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+</body>
+
+* Install Bootstrap snippet extension for VS Code -> Auto-generate code HTML when typing "bs3-" in the project.
+
+[Convert html -> JSX Tools]
+On the other hand, we do not need to use the way mentioned above to create HTML. You can search/write HTML code and convert it to JSX if you want. Could you please refer the link below for details.
+https://magic.reactjs.net/htmltojsx.htmComponent
+
+Step 2:
+- Create Header.js and Content.js into the path src/components/...
+
+In App.js, delete the existing code and customize the UI by calling component Header and Content to match the requirements of Practice 2.

@@ -1,0 +1,4 @@
+"FORMAT CALENDAR, STANDARD 1.0"
+LineType,CalendarName,Description,Comments,CalendarPeriodNumber_CALP,Description_CALP,ShortDescription_CALP,YearName_CALP,DateFrom_CALP,DateTo_CALP,PeriodStatus_CALP,ProcessingGroupName_CALP,RevProcessingGroupName_CALP,Period_CALP,ReversalPeriod_CALP
+CAL,$LEAVE,Default Leave Calendar. Do NOT add lines,"Default Leave Calendar, for use by non timesheeted employees",,,,,,,,,,,
+CALP,,,,1,test,test,2018,04-Dec-2018,04-Dec-2018,O,11ACT,11ACT,1,2
